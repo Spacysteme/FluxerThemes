@@ -1,0 +1,59 @@
+
+/*
+ * @name CustomTypingFluxer
+ * @author github.com/Spacysteme
+ * @description Customizable typing indicator for Fluxer.app
+ * @tags custom, typing, messages
+ * @version 1.0.0
+ */
+
+[data-flx="channel.typing-users.span"] >
+[data-flx="i18n.translation-safe-message.wrap-text-segments.flx-i18n"] {
+    display: none !important;
+}
+
+[data-flx="channel.typing-users.get-typing-text.username"] {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+[data-flx="channel.typing-users.get-typing-text.username"]::after {
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+[data-flx="channel.typing-users.span"]:not(:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(2))) > span[data-flx="channel.typing-users.get-typing-text.username"]::after {
+    content: " is typing...";
+}
+
+[data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(2)):not(:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(3))) > span[data-flx="channel.typing-users.get-typing-text.username"]:first-of-type::after {
+    content: " and ";
+}
+
+[data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(2)):not(:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(3))) > span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(2)::after {
+    content: " are typing...";
+}
+
+[data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(3)):not(:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(4))) > span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(1)::after {
+    content: ", ";
+}
+
+[data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(3)):not(:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(4))) > span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(2)::after {
+    content: " and ";
+}
+
+[data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(3)):not(:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(4))) > span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(3)::after {
+    content: " are a typing...";
+}
+
+[data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(4)) > span[data-flx="channel.typing-users.get-typing-text.username"] {
+    display: none !important;
+}
+
+[data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(4))::after {
+    content: "Several people are at a party...";
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 500;
+}
