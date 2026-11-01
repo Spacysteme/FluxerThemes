@@ -44,7 +44,7 @@
 }
 
 [data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(3)):not(:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(4))) > span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(3)::after {
-    content: " are a typing...";
+    content: " are typing...";
 }
 
 [data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(4)) > span[data-flx="channel.typing-users.get-typing-text.username"] {
