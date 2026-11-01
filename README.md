@@ -11,10 +11,9 @@ This repository contains personal projects designed to customize and enhance the
 ## <img src="https://fluxerusercontent.com/emojis/1431008234607276578.webp?animated=true" width="36px" align="absmiddle"> Themes & Tweaks
 
 | Name | Description | Status |
-|:---|:---|:---:|
+|:---|:---:|:---:|
 | **CustomTyping** | Customize the typing indicator with personalized messages. | Available |
-| coming soon... |  | Planned |
-
+| coming soon... | <img src="https://cdn3.emoji.gg/emojis/15583-oneko-sleep.gif" width="18px"> | Planned |
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&pause=1200&center=true&color=FFFFFF&vCenter=true&width=520&lines=All+My+Themes" alt="themes"/>
