@@ -52,7 +52,7 @@
 }
 
 [data-flx="channel.typing-users.span"]:has(> span[data-flx="channel.typing-users.get-typing-text.username"]:nth-of-type(4))::after {
-    content: "Several people are at a party...";
+    content: "Several people are typing...";
     color: var(--text-secondary);
     font-size: 12px;
     font-weight: 500;
