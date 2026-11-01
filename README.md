@@ -28,11 +28,9 @@ Instead of the standard *"is typing..."* indicator, you can display your own cus
 ### Features
 
 - 📝 Custom typing messages.
-- 🎨 Preserves existing username colors, including role colors.
+- ⚙️ Easy to personalize and modify.
 - 👥 Supports multiple typing users.
 - 🌙 Adapts to Fluxer's current theme through CSS variables.
-- ⚡ Lightweight CSS-only customization.
-- 🔧 Easy to personalize and modify.
 
 ### Preview
 
